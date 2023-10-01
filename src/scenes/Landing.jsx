@@ -3,6 +3,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Typewriter from "../components/Typewriter";
+import CV from "../assets/CV Rabieh SASSI.pdf";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -50,9 +51,9 @@ const Landing = ({ setSelectedPage }) => {
             Rabieh Sassi
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            <Typewriter text="Développeur web Nest.JS, React | En recherche d'une alternance pour Janvier 2024" delay={70}/>
-            <p className="mt-10 mb-7 text-sm text-center md:text-start">Rythme : <Typewriter text="3 jours entreprise (mercredi - vendredi) | 2 jours formation (lundi - mardi)" delay={70} /></p>
+          <p className="font-playfair mt-10 mb-7 text-sm text-center md:text-start">
+            <Typewriter text="Développeur web Nest.JS, React | En recherche d'une alternance pour Janvier 2024" delay={30}/>
+            <p className="font-playfair mt-10 mb-7 text-sm text-center md:text-start">Rythme : <Typewriter text="3 jours entreprise (mercredi - vendredi) | 2 jours formation (lundi - mardi)" delay={30} /></p>
           </p>
         </motion.div>
 
@@ -79,20 +80,21 @@ const Landing = ({ setSelectedPage }) => {
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
-            href="#contact"
+            href="#projects"
           >
-            <div className="bg-deep-blue hover:text-green_terminal transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-deep-blue hover:text-blue transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
               Projets
             </div>
           </AnchorLink>
-          <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+          <div
+            className="bg-gradient-reverseblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
+              // à modifier pour mettre le CV
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            Téléchargez mon CV
-          </AnchorLink>
+            <a href={CV} target="_blank">Téléchargez mon CV</a>
+          </div>
         </motion.div>
 
         <motion.div
@@ -108,6 +110,24 @@ const Landing = ({ setSelectedPage }) => {
         >
           <SocialMediaIcons />
         </motion.div>
+        <div className="flex mt-5 justify-center md:justify-start">
+          <p className="text-5xl mb-5 font-playfair z-10 text-center md:text-start">Stack Environment</p>
+        </div>
+        <div className="flex justify-center md:justify-start mt-3 gap-4">
+          <img className="stack-img" alt="react" src="../assets/react.png" />
+          <img className="stack-img" alt="nodejs" src="../assets/node-js-icon.png" />
+          <img className="stack-img" alt="nest" src="../assets/nest.svg" />
+          <img className="stack-img" alt="typescript" src="../assets/typescript.png" />
+          <img className="stack-img" alt="tailwind" src="../assets/tailwind.png" />
+          <img className="stack-img" alt="express" src="../assets/express.png" />
+          <img className="stack-img" alt="python" src="../assets/python.png" />
+          <img className="stack-img" alt="php" src="../assets/php.png" />
+        </div>
+        <div className="flex justify-center md:justify-start mt-3 gap-4">
+          <img className="stack-img" alt="visual-studio-code" src="../assets/vscode.png" />
+          <img className="stack-img" alt="git" src="../assets/git-icon.png" />
+          <img className="stack-img" alt="kali-linux" src="../assets/kali-linux.png" />
+        </div>
       </div>
     </section>
   );

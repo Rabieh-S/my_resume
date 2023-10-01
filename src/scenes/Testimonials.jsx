@@ -16,13 +16,12 @@ const Testimonials = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">
+        <p className="font-playfair font-semibold text-5xl mb-5">nmap -sS <span className="font-playfair font-semibold text-5xl mb-5 text-red">
           TESTIMONIALS
-        </p>
+        </span></p>
         <LineGradient width="mx-auto w-2/5" />
-        <p className="mt-10">
-          Here's What People are Saying About My Work. Aliquam aliquet integer
-          ut fames odio in at. At magna ornare dictum lectus.
+        <p className="font-playfair mt-10">
+          Voici les personnes avec qui j'ai déjà collaboré. Ce qu'ils pensent de moi peuvent vous donner confiance sur mes capacités et mes compétences.
         </p>
       </motion.div>
 
@@ -42,8 +41,9 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea.
+            Rabieh est persévérant, curieux et aime le challenge.
           </p>
+          <small className="text-center mt-5">Odile RHINO</small>
         </motion.div>
 
         <motion.div
@@ -60,9 +60,9 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-            lectus.
+            En tant que formateur, j'aimais beaucoup l'énergie que Rabieh dégageait dans sa promo.
           </p>
+          <small className="text-center mt-5">Kévin Terrier</small>
         </motion.div>
 
         <motion.div
@@ -79,8 +79,9 @@ const Testimonials = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Fames odio in at. At magna ornare dictum lectus.
+          Rabieh est un développeur passionné, pédagogue et méticuleux, qui fait la différence lors des projets menés en équipe.
           </p>
+          <small className="text-center mt-5">Yann Gibbings</small>
         </motion.div>
       </div>
     </section>

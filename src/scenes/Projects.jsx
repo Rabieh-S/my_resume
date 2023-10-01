@@ -26,8 +26,7 @@ const Project = ({ title }) => {
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
+          C'est un projet en cours de réalisation.
         </p>
       </div>
       <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
@@ -51,8 +50,8 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
-            <Typewriter text="tar -czvf" delay={100}/> <span className="text-electric-blue">PRO</span>JECTS.tar.gz
+          <p className="font-playfair font-semibold text-5xl">
+            <Typewriter text="tar -czvf" delay={100}/> <span className="text-electric-blue">PROJECTS</span>.tar.gz
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />

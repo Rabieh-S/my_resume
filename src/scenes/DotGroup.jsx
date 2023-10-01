@@ -5,13 +5,21 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
     before:border-2 before:border-electric-blue before:left-[-50%] before:top-[-50%]`;
 
   return (
-    <div className="flex flex-col gap-6 fixed top-[60%] right-7">
+    <div className="flex flex-col gap-6 fixed top-[57%] right-7">
       <AnchorLink
         href="#home"
         className={`${
           selectedPage === "home" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
         onClick={() => setSelectedPage("home")}
+      />
+
+      <AnchorLink
+        href="#parcours"
+        className={`${
+          selectedPage === "parcours" ? selectedStyles : "bg-dark-grey"
+        } w-3 h-3 rounded-full`}
+        onClick={() => setSelectedPage("parcours")}
       />
 
       <AnchorLink

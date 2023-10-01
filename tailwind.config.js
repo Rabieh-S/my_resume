@@ -25,6 +25,8 @@ export default {
 
         "gradient-rainblue":
           "linear-gradient(90deg, #065ec2 14.53%, #467bb8 69.36%, #6889b0 117.73%)",
+        "gradient-reverseblue":
+          "linear-gradient(90deg, #6889b0 14.53%, #467bb8 69.36%, #065ec2 117.73%)"
       }),
       fontFamily: {
         jellyfish: ["IBM Plex Mono", "sans"],
@@ -35,6 +37,7 @@ export default {
         odile: "url('./assets/odile.png')",
         kevin: "url('./assets/kevin.png')",
         yann: "url('./assets/yann.png')",
+        growth: "url('./assets/growth-mindset.png')"
       },
     },
     screens: {
