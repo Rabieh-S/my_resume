@@ -85,6 +85,14 @@ const Landing = ({ setSelectedPage }) => {
               Projets
             </div>
           </AnchorLink>
+          <AnchorLink
+            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+              hover:bg-blue hover:text-white transition duration-500"
+            onClick={() => setSelectedPage("contact")}
+            href="#contact"
+          >
+            Téléchargez mon CV
+          </AnchorLink>
         </motion.div>
 
         <motion.div
